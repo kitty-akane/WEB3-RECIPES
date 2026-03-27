@@ -1,0 +1,26 @@
+.btn {
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.35rem;
+  align-self: flex-start;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #c9c2b6;
+  background: #faf8f5;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f0ebe3;
+}
+
+.active {
+  background: #fff0f0;
+  border-color: #e07070;
+  color: #c0392b;
+}
+
+.active:hover {
+  background: #ffe0e0;
+}

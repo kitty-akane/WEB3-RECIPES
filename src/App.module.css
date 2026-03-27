@@ -51,3 +51,8 @@
   margin: 0 auto;
   padding: 1.5rem 1.25rem 2.5rem;
 }
+.active {
+  background: #fff0f0;
+  border-color: #e07070;
+  color: #c0392b;
+}

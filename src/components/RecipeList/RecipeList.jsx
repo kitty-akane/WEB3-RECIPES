@@ -1,7 +1,7 @@
-import RecipeCard from '../RecipeCard/RecipeCard.jsx'
-import styles from './RecipeList.module.css'
+import RecipeCard from "../RecipeCard/RecipeCard.jsx";
+import styles from "./RecipeList.module.css";
 
-export default function RecipeList({ recipes }) {
+export default function RecipeList({ recipes, setFavoriteIds }) {
   return (
     <ul className={styles.list}>
       {recipes.map((recipe, index) => (
@@ -20,9 +20,9 @@ export default function RecipeList({ recipes }) {
           matches the recipe you originally pinned.
         */
         <li key={index} className={styles.item}>
-          <RecipeCard recipe={recipe} />
+          <RecipeCard recipe={recipe} setFavoriteIds={setFavoriteIds} />
         </li>
       ))}
     </ul>
-  )
+  );
 }
